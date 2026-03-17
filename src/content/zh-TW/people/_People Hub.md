@@ -1,8 +1,12 @@
 ---
-created: 2026-03-17
-tags: [人物, Hub]
-source: []
-status: 🌱 初稿（知識庫框架）
+title: 台灣人物
+description: 影響台灣發展的重要人物與故事
+date: '2026-03-17'
+tags:
+- Hub
+difficulty: beginner
+featured: true
+author: Taiwan.md Contributors
 ---
 
 # 台灣人物 👥

@@ -1,10 +1,14 @@
 ---
-title: "台灣夜市文化：庶民生活的縮影"
-description: "探索台灣夜市獨特的文化現象，從小吃攤販到社交聚會，理解這個融合美食、經濟與人情味的生活空間。"
-date: 2024-03-17T00:00:00Z
-tags: ["夜市", "小吃", "庶民文化", "社交"]
-author: "taiwan.md 社群"
-difficulty: "beginner"
+title: 台灣夜市文化：庶民生活的縮影
+description: 探索台灣夜市獨特的文化現象，從小吃攤販到社交聚會，理解這個融合美食、經濟與人情味的生活空間。
+date: '2024-03-17'
+tags:
+- 夜市
+- 小吃
+- 庶民文化
+- 社交
+author: taiwan.md 社群
+difficulty: beginner
 readingTime: 8
 featured: true
 ---

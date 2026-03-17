@@ -61,6 +61,73 @@ const { title, description = '讓全世界完整認識台灣', lang = 'zh-TW', i
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 2rem;
+      }
+      
+      .nav-menu {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+      }
+      
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      
+      .nav-link:hover {
+        color: #fbbf24;
+        transform: translateY(-1px);
+      }
+      
+      .github-star {
+        font-size: 0.8rem;
+      }
+      
+      .knowledge-graph {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      
+      .knowledge-graph:hover {
+        color: white;
+        transform: none;
+      }
+      
+      @media (max-width: 768px) {
+        .header-content {
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        
+        .nav-menu {
+          order: 3;
+          width: 100%;
+          justify-content: center;
+          gap: 1rem;
+        }
+        
+        .nav-link {
+          font-size: 0.9rem;
+        }
+        
+        .footer-main {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        
+        .footer-links {
+          align-items: center;
+        }
       }
       
       .logo {
@@ -94,29 +161,66 @@ const { title, description = '讓全世界完整認識台灣', lang = 'zh-TW', i
       }
       
       footer {
-        background: #f3f4f6;
-        padding: 2rem 0;
-        text-align: center;
-        color: #666;
-        border-top: 1px solid #e5e7eb;
+        background: #1f2937;
+        padding: 3rem 0 1rem;
+        color: #d1d5db;
+        border-top: 1px solid #374151;
       }
       
       .footer-content {
         font-size: 0.9rem;
       }
       
+      .footer-main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .footer-section h3 {
+        color: #fbbf24;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+      }
+      
+      .footer-section h4 {
+        color: white;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+      }
+      
+      .footer-section p {
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+      }
+      
+      .footer-heart {
+        color: #22c55e;
+        font-weight: 500;
+      }
+      
       .footer-links {
-        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
       }
       
       .footer-links a {
-        color: #1e40af;
+        color: #9ca3af;
         text-decoration: none;
-        margin: 0 1rem;
+        transition: color 0.2s;
       }
       
       .footer-links a:hover {
-        text-decoration: underline;
+        color: #fbbf24;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid #374151;
+        color: #9ca3af;
       }
     </style>
   </head>
@@ -125,6 +229,17 @@ const { title, description = '讓全世界完整認識台灣', lang = 'zh-TW', i
       <div class="container">
         <div class="header-content">
           <a href="/" class="logo">Taiwan.md</a>
+          <nav class="nav-menu">
+            <a href="#categories" class="nav-link">探索</a>
+            <a href="/about" class="nav-link">關於</a>
+            <a href="https://github.com/frank890417/taiwan-md" target="_blank" class="nav-link">
+              GitHub
+              <span class="github-star">⭐</span>
+            </a>
+            <button class="nav-link knowledge-graph" title="知識圖譜（開發中）">
+              🕸️
+            </button>
+          </nav>
           <div class="lang-toggle">
             <a href="/" class="lang-btn">中文</a>
             <a href="/en" class="lang-btn">English</a>
@@ -142,11 +257,32 @@ const { title, description = '讓全世界完整認識台灣', lang = 'zh-TW', i
     <footer>
       <div class="container">
         <div class="footer-content">
-          <p>&copy; 2024 Taiwan.md - 開源台灣知識庫</p>
-          <div class="footer-links">
-            <a href="https://github.com/frank890417/taiwan-md" target="_blank">GitHub</a>
-            <a href="/contributing">貢獻指南</a>
-            <a href="/license">授權條款</a>
+          <div class="footer-main">
+            <div class="footer-section">
+              <h3>Taiwan.md</h3>
+              <p>開源、AI-friendly 的台灣知識庫</p>
+              <p class="footer-heart">Curated with ❤️ from Taiwan</p>
+            </div>
+            <div class="footer-section">
+              <h4>授權</h4>
+              <p>本專案採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-tw" target="_blank">CC BY-SA 4.0</a> 授權</p>
+            </div>
+            <div class="footer-section">
+              <h4>聯繫</h4>
+              <p>專案維護：<a href="mailto:cheyu.wu@monoame.com">cheyu.wu@monoame.com</a></p>
+            </div>
+            <div class="footer-section">
+              <h4>連結</h4>
+              <div class="footer-links">
+                <a href="https://github.com/frank890417/taiwan-md" target="_blank">GitHub</a>
+                <a href="https://github.com/frank890417/taiwan-md/tree/main/knowledge" target="_blank">Raw Markdown 文件</a>
+                <a href="/contributing">貢獻指南</a>
+                <a href="/license">授權條款</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Taiwan.md - 開源台灣知識庫</p>
           </div>
         </div>
       </div>

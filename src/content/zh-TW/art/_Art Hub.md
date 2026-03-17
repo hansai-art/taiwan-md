@@ -1,8 +1,12 @@
 ---
-created: 2026-03-17
-tags: [藝術, Hub]
-source: []
-status: 🌱 初稿（知識庫框架）
+title: 台灣藝術
+description: 傳統工藝到當代藝術的創作能量
+date: '2026-03-17'
+tags:
+- Hub
+difficulty: beginner
+featured: true
+author: Taiwan.md Contributors
 ---
 
 # 台灣藝術 🎨

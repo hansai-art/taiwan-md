@@ -5,84 +5,96 @@ const categories = [
     name_en: 'History', 
     slug: 'history', 
     description: '從史前時代到現代，台灣歷史的完整脈絡',
-    icon: '📜'
+    icon: '📜',
+    color: 'from-amber-500 to-orange-600'
   },
   { 
     name: '地理', 
     name_en: 'Geography', 
     slug: 'geography', 
     description: '台灣的自然環境、地形特色與區域發展',
-    icon: '🗺️'
+    icon: '🗺️',
+    color: 'from-emerald-500 to-teal-600'
   },
   { 
     name: '文化', 
     name_en: 'Culture', 
     slug: 'culture', 
     description: '多元族群文化的融合與在地特色',
-    icon: '🎭'
+    icon: '🎭',
+    color: 'from-purple-500 to-violet-600'
   },
   { 
     name: '美食', 
     name_en: 'Food', 
     slug: 'food', 
     description: '從夜市小吃到精緻料理的美食文化',
-    icon: '🍜'
+    icon: '🍜',
+    color: 'from-rose-500 to-pink-600'
   },
   { 
     name: '藝術', 
     name_en: 'Art', 
     slug: 'art', 
     description: '傳統工藝到當代藝術的創作能量',
-    icon: '🎨'
+    icon: '🎨',
+    color: 'from-cyan-500 to-blue-600'
   },
   { 
     name: '音樂', 
     name_en: 'Music', 
     slug: 'music', 
     description: '從原住民音樂到流行音樂的聲音風景',
-    icon: '🎵'
+    icon: '🎵',
+    color: 'from-indigo-500 to-purple-600'
   },
   { 
     name: '科技', 
     name_en: 'Technology', 
     slug: 'technology', 
     description: '科技島的創新發展與數位轉型',
-    icon: '💻'
+    icon: '💻',
+    color: 'from-slate-500 to-gray-600'
   },
   { 
     name: '自然', 
     name_en: 'Nature', 
     slug: 'nature', 
     description: '豐富的生態環境與環保議題',
-    icon: '🌿'
+    icon: '🌿',
+    color: 'from-green-500 to-emerald-600'
   },
   { 
     name: '人物', 
     name_en: 'People', 
     slug: 'people', 
     description: '影響台灣發展的重要人物與故事',
-    icon: '👥'
+    icon: '👥',
+    color: 'from-orange-500 to-red-600'
   },
   { 
     name: '社會', 
     name_en: 'Society', 
     slug: 'society', 
     description: '社會變遷與當代議題的深度探討',
-    icon: '🏛️'
+    icon: '🏛️',
+    color: 'from-blue-500 to-indigo-600'
   },
   { 
     name: '經濟', 
     name_en: 'Economy', 
     slug: 'economy', 
     description: '經濟奇蹟的成因與轉型挑戰',
-    icon: '📊'
+    icon: '📊',
+    color: 'from-yellow-500 to-amber-600'
   },
   { 
     name: '生活', 
     name_en: 'Lifestyle', 
     slug: 'lifestyle', 
     description: '台灣人的生活方式與價值觀',
-    icon: '🏠'
+    icon: '🏠',
+    color: 'from-teal-500 to-cyan-600'
   }
 ];
 
@@ -95,9 +107,12 @@ const langPrefix = lang === 'en' ? '/en' : '';
 ---
 
 <div class="category-grid">
-  {categories.map(category => (
-    <a href={`${langPrefix}/${category.slug}`} class="category-card">
-      <div class="category-icon">{category.icon}</div>
+  {categories.map((category, index) => (
+    <a href={`${langPrefix}/${category.slug}`} class="category-card" data-color={category.color}>
+      <div class="category-header">
+        <div class="category-icon">{category.icon}</div>
+        <div class="category-gradient"></div>
+      </div>
       <h3 class="category-name">
         {lang === 'en' ? category.name_en : category.name}
       </h3>
@@ -109,7 +124,7 @@ const langPrefix = lang === 'en' ? '/en' : '';
 <style>
   .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin: 2rem 0;
   }
@@ -117,36 +132,112 @@ const langPrefix = lang === 'en' ? '/en' : '';
   .category-card {
     background: white;
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 1.5rem;
+    border-radius: 12px;
+    padding: 0;
     text-decoration: none;
     color: inherit;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
   }
   
   .category-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border-color: #1e40af;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .category-header {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .category-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Color gradients for each category */
+  .category-card[data-color="from-amber-500 to-orange-600"] .category-gradient {
+    background: linear-gradient(135deg, #f59e0b, #ea580c);
+  }
+  
+  .category-card[data-color="from-emerald-500 to-teal-600"] .category-gradient {
+    background: linear-gradient(135deg, #10b981, #0d9488);
+  }
+  
+  .category-card[data-color="from-purple-500 to-violet-600"] .category-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  }
+  
+  .category-card[data-color="from-rose-500 to-pink-600"] .category-gradient {
+    background: linear-gradient(135deg, #f43f5e, #db2777);
+  }
+  
+  .category-card[data-color="from-cyan-500 to-blue-600"] .category-gradient {
+    background: linear-gradient(135deg, #06b6d4, #2563eb);
+  }
+  
+  .category-card[data-color="from-indigo-500 to-purple-600"] .category-gradient {
+    background: linear-gradient(135deg, #6366f1, #9333ea);
+  }
+  
+  .category-card[data-color="from-slate-500 to-gray-600"] .category-gradient {
+    background: linear-gradient(135deg, #64748b, #4b5563);
+  }
+  
+  .category-card[data-color="from-green-500 to-emerald-600"] .category-gradient {
+    background: linear-gradient(135deg, #22c55e, #059669);
+  }
+  
+  .category-card[data-color="from-orange-500 to-red-600"] .category-gradient {
+    background: linear-gradient(135deg, #f97316, #dc2626);
+  }
+  
+  .category-card[data-color="from-blue-500 to-indigo-600"] .category-gradient {
+    background: linear-gradient(135deg, #3b82f6, #4f46e5);
+  }
+  
+  .category-card[data-color="from-yellow-500 to-amber-600"] .category-gradient {
+    background: linear-gradient(135deg, #eab308, #d97706);
+  }
+  
+  .category-card[data-color="from-teal-500 to-cyan-600"] .category-gradient {
+    background: linear-gradient(135deg, #14b8a6, #0891b2);
+  }
+  
+  .category-card:hover .category-gradient {
+    opacity: 0.15;
   }
   
   .category-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   }
   
   .category-name {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin: 1rem 1.5rem 0.5rem;
     color: #1f2937;
   }
   
   .category-description {
     color: #6b7280;
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 0 1.5rem 1.5rem;
   }
   
   @media (max-width: 768px) {

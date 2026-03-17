@@ -1,8 +1,12 @@
 ---
-created: 2026-03-17
-tags: [音樂, Hub]
-source: []
-status: 🌱 初稿（知識庫框架）
+title: 台灣音樂
+description: 從原住民音樂到流行音樂的聲音風景
+date: '2026-03-17'
+tags:
+- Hub
+difficulty: beginner
+featured: true
+author: Taiwan.md Contributors
 ---
 
 # 台灣音樂 🎵

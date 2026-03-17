@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const categories = [
+  { id: 'history', name: 'History', emoji: '📜' },
+  { id: 'geography', name: 'Geography', emoji: '🗺️' },
+  { id: 'culture', name: 'Culture', emoji: '🎭' },
+  { id: 'food', name: 'Food', emoji: '🍜' },
+  { id: 'art', name: 'Art', emoji: '🎨' },
+  { id: 'music', name: 'Music', emoji: '🎵' },
+  { id: 'technology', name: 'Technology', emoji: '💻' },
+  { id: 'nature', name: 'Nature', emoji: '🌿' },
+  { id: 'people', name: 'People', emoji: '👥' },
+  { id: 'society', name: 'Society', emoji: '⚖️' },
+  { id: 'economy', name: 'Economy', emoji: '📈' },
+  { id: 'lifestyle', name: 'Lifestyle', emoji: '🏠' },
+];
+
+// Count articles per category
+const articleCounts: Record<string, number> = {};
+for (const cat of categories) {
+  try {
+    const articles = await getCollection(`en-${cat.id}` as any);
+    articleCounts[cat.id] = articles.filter((a: any) => !a.id.startsWith('_')).length;
+  } catch { articleCounts[cat.id] = 0; }
+}
+---
+
+<Layout title="Taiwan.md — Open Knowledge Base of Taiwan">
+  <main>
+    <section class="hero">
+      <h1>Taiwan.md</h1>
+      <p class="subtitle">The open-source, AI-friendly knowledge base about Taiwan</p>
+      <p class="tagline">Curated by people who love Taiwan. For everyone — humans and AI alike.</p>
+      <div class="cta">
+        <a href="#explore" class="btn primary">Start Exploring</a>
+        <a href="https://github.com/frank890417/taiwan-md" class="btn secondary">⭐ GitHub</a>
+      </div>
+    </section>
+
+    <section id="explore" class="explore">
+      <h2>Explore Taiwan</h2>
+      <div class="grid">
+        {categories.map(cat => (
+          <a href={`/en/${cat.id}`} class="card">
+            <span class="emoji">{cat.emoji}</span>
+            <h3>{cat.name}</h3>
+            <span class="count">{articleCounts[cat.id] || 0} articles</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+  }
+  .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+  .subtitle { font-size: 1.3rem; opacity: 0.9; margin-bottom: 0.5rem; }
+  .tagline { opacity: 0.7; margin-bottom: 2rem; }
+  .cta { display: flex; gap: 1rem; justify-content: center; }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn.primary { background: #3b82f6; color: white; }
+  .btn.secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); }
+  .explore {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  .explore h2 { text-align: center; margin-bottom: 2rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+  .card:hover {
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59,130,246,0.15);
+  }
+  .emoji { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+  .card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+  .count { font-size: 0.8rem; color: #94a3b8; }
+</style>

@@ -1,162 +1,380 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection, render } from 'astro:content';
-
-const categories = [
-  'history', 'geography', 'culture', 'food', 'art', 'music',
-  'technology', 'nature', 'people', 'society', 'economy', 'lifestyle'
-];
-
 export async function getStaticPaths() {
-  const paths: any[] = [];
-  
-  for (const cat of ['history', 'geography', 'culture', 'food', 'art', 'music',
-    'technology', 'nature', 'people', 'society', 'economy', 'lifestyle']) {
-    try {
-      const articles = await getCollection(`zh-tw-${cat}` as any);
-      for (const article of articles) {
-        if (!article.id.startsWith('_')) {
-          paths.push({
-            params: { category: cat, slug: article.id },
-            props: { article },
-          });
-        }
+  // 暫時建立一些示例文章路由
+  const sampleArticles = [
+    {
+      params: { category: 'history', slug: 'democracy' },
+      props: { 
+        title: '台灣民主化',
+        description: '台灣民主化是指從1990年代前後，台灣從中國國民黨一黨專政的威權體制成功轉型為民主自由國家的過程。',
+        content: '<h1>台灣民主化</h1><p>台灣民主化的過程...</p>'
       }
-    } catch (e) {
-      // skip
+    },
+    {
+      params: { category: 'food', slug: 'night-market' },
+      props: { 
+        title: '台灣夜市文化',
+        description: '夜市是台灣庶民文化的重要體現，也是外國遊客認識台灣的重要窗口。',
+        content: '<h1>台灣夜市文化</h1><p>夜市文化的發展...</p>'
+      }
     }
-  }
-  
-  return paths;
+  ];
+
+  return sampleArticles;
 }
 
-const { article } = Astro.props;
-const { category } = Astro.params;
-const { Content } = await render(article);
+import Layout from '../../layouts/Layout.astro';
 
-const categoryNames: Record<string, string> = {
-  history: '📜 歷史', geography: '🗺️ 地理', culture: '🎭 文化',
-  food: '🍜 美食', art: '🎨 藝術', music: '🎵 音樂',
-  technology: '💻 科技', nature: '🌿 自然', people: '👥 人物',
-  society: '⚖️ 社會', economy: '📈 經濟', lifestyle: '🏠 生活',
+const { title, description, content } = Astro.props;
+const { category, slug } = Astro.params;
+
+const categoryInfo = {
+  'history': { name: '歷史', icon: '📜' },
+  'geography': { name: '地理', icon: '🗺️' },
+  'culture': { name: '文化', icon: '🎭' },
+  'food': { name: '美食', icon: '🍜' },
+  'art': { name: '藝術', icon: '🎨' },
+  'music': { name: '音樂', icon: '🎵' },
+  'technology': { name: '科技', icon: '💻' },
+  'nature': { name: '自然', icon: '🌿' },
+  'people': { name: '人物', icon: '👥' },
+  'society': { name: '社會', icon: '🏛️' },
+  'economy': { name: '經濟', icon: '📊' },
+  'lifestyle': { name: '生活', icon: '🏠' }
 };
+
+const currentCategory = categoryInfo[category as keyof typeof categoryInfo];
 ---
 
-<Layout title={`${article.data.title} — Taiwan.md`}>
+<Layout 
+  title={`${title} - Taiwan.md`}
+  description={description}
+>
   <main class="article-page">
-    <div class="breadcrumb">
-      <a href="/">首頁</a> / <a href={`/${category}`}>{categoryNames[category!] || category}</a>
-    </div>
-    
-    <article>
-      <header>
-        <h1>{article.data.title}</h1>
-        {article.data.description && (
-          <p class="description">{article.data.description}</p>
-        )}
-        <div class="meta">
-          {article.data.readingTime && <span>⏱ {article.data.readingTime} 分鐘閱讀</span>}
-          {article.data.tags && article.data.tags.length > 0 && (
-            <span class="tags">
-              {article.data.tags.map((tag: string) => <span class="tag">#{tag}</span>)}
-            </span>
-          )}
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="/">首頁</a>
+        <span class="separator">›</span>
+        <a href={`/${category}`}>{currentCategory?.name || category}</a>
+        <span class="separator">›</span>
+        <span class="current">{title}</span>
+      </nav>
+
+      <!-- Article Header -->
+      <header class="article-header">
+        <div class="category-label">
+          <span class="category-icon">{currentCategory?.icon || '📄'}</span>
+          <span class="category-name">{currentCategory?.name || category}</span>
+        </div>
+        
+        <h1 class="article-title">{title}</h1>
+        
+        <p class="article-description">{description}</p>
+
+        <div class="article-meta">
+          <div class="meta-item">
+            <span class="meta-icon">📖</span>
+            <span>3 分鐘閱讀</span>
+          </div>
+          
+          <div class="meta-item">
+            <span class="meta-icon">📅</span>
+            <span>{new Date().toLocaleDateString('zh-TW')}</span>
+          </div>
+
+          <div class="meta-item">
+            <span class="meta-icon">🎯</span>
+            <span class="difficulty beginner">入門</span>
+          </div>
         </div>
       </header>
-      
-      <div class="content">
-        <Content />
+
+      <!-- Article Content -->
+      <article class="article-content">
+        <div class="content-coming-soon">
+          <div class="coming-soon-icon">🚧</div>
+          <h2>內容開發中</h2>
+          <p>此文章正在撰寫中，很快就會與大家見面！</p>
+          <p class="article-preview">
+            <strong>預覽：</strong> {description}
+          </p>
+          
+          <div class="contribute-section">
+            <h3>想要貢獻這篇文章？</h3>
+            <p>Taiwan.md 是開源專案，歡迎大家一起參與內容創作！</p>
+            <div class="contribute-buttons">
+              <a href="https://github.com/frank890417/taiwan-md" target="_blank" class="btn-contribute">
+                📝 參與貢獻
+              </a>
+              <a href="/resources" class="btn-learn-more">
+                📚 了解更多
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Back Navigation -->
+      <div class="back-navigation">
+        <a href={`/${category}`} class="btn-secondary">
+          ← 返回 {currentCategory?.name || category}
+        </a>
+        <a href="/" class="btn-secondary">
+          返回首頁
+        </a>
       </div>
-    </article>
-    
-    <div class="back-link">
-      <a href={`/${category}`}>← 回到{categoryNames[category!] || category}</a>
     </div>
   </main>
 </Layout>
 
 <style>
   .article-page {
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
+  .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
   }
+
   .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-bottom: 2rem;
     font-size: 0.9rem;
-    color: #64748b;
   }
+
   .breadcrumb a {
-    color: #3b82f6;
+    color: #1e40af;
     text-decoration: none;
   }
-  article header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e2e8f0;
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
   }
-  article h1 {
-    font-size: 2.2rem;
-    color: #1a1a2e;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
+
+  .separator {
+    color: #9ca3af;
   }
-  .description {
-    font-size: 1.1rem;
-    color: #64748b;
+
+  .current {
+    color: #6b7280;
+  }
+
+  .article-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .category-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .category-icon {
+    font-size: 1rem;
+  }
+
+  .article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .article-description {
+    font-size: 1.2rem;
+    color: #6b7280;
     line-height: 1.6;
+    margin-bottom: 2rem;
   }
-  .meta {
+
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  .meta-icon {
+    font-size: 1rem;
+  }
+
+  .difficulty {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .difficulty.beginner {
+    background: #d1fae5;
+    color: #065f46;
+  }
+
+  .article-content {
+    margin-bottom: 3rem;
+  }
+
+  .content-coming-soon {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+  }
+
+  .coming-soon-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content-coming-soon h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .content-coming-soon p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  .article-preview {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .contribute-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .contribute-section h3 {
+    font-size: 1.3rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .contribute-section p {
+    margin-bottom: 2rem;
+  }
+
+  .contribute-buttons {
     display: flex;
     gap: 1rem;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-top: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  .tag {
-    background: #f1f5f9;
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
-    margin-left: 0.25rem;
-  }
-  .content {
-    line-height: 1.8;
-    color: #334155;
-  }
-  .content :global(h2) {
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1a1a2e;
-  }
-  .content :global(h3) {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    color: #334155;
-  }
-  .content :global(a) {
-    color: #3b82f6;
-  }
-  .content :global(blockquote) {
-    border-left: 3px solid #3b82f6;
-    padding-left: 1rem;
-    color: #64748b;
-    margin: 1.5rem 0;
-  }
-  .content :global(ul), .content :global(ol) {
-    padding-left: 1.5rem;
-  }
-  .content :global(li) {
-    margin-bottom: 0.5rem;
-  }
-  .back-link {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #e2e8f0;
-  }
-  .back-link a {
-    color: #3b82f6;
+
+  .btn-contribute, .btn-learn-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-contribute {
+    background: #1e40af;
+    color: white;
+  }
+
+  .btn-contribute:hover {
+    background: #1e3a8a;
+  }
+
+  .btn-learn-more {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+
+  .btn-learn-more:hover {
+    background: #e5e7eb;
+  }
+
+  .back-navigation {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #6b7280;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    background: #4b5563;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .article-title {
+      font-size: 2rem;
+    }
+
+    .article-meta {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .contribute-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .back-navigation {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 </style>

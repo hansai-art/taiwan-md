@@ -1,0 +1,216 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const categories = [
+  'history', 'geography', 'culture', 'food', 'art', 'music',
+  'technology', 'nature', 'people', 'society', 'economy', 'lifestyle'
+];
+
+const categoryColors: Record<string, string> = {
+  history: '#e74c3c', geography: '#2ecc71', culture: '#9b59b6',
+  food: '#f39c12', art: '#e91e63', music: '#00bcd4',
+  technology: '#3498db', nature: '#27ae60', people: '#ff9800',
+  society: '#607d8b', economy: '#ff5722', lifestyle: '#8bc34a',
+};
+
+const categoryNames: Record<string, string> = {
+  history: '📜 歷史', geography: '🗺️ 地理', culture: '🎭 文化',
+  food: '🍜 美食', art: '🎨 藝術', music: '🎵 音樂',
+  technology: '💻 科技', nature: '🌿 自然', people: '👥 人物',
+  society: '⚖️ 社會', economy: '📈 經濟', lifestyle: '🏠 生活',
+};
+
+// Build nodes and edges
+const nodes: any[] = [];
+const edges: any[] = [];
+
+// Center node
+nodes.push({ id: 'taiwan', label: '🇹🇼 Taiwan.md', group: 'center', size: 30 });
+
+for (const cat of categories) {
+  // Category node
+  nodes.push({ 
+    id: cat, 
+    label: categoryNames[cat] || cat, 
+    group: cat, 
+    color: categoryColors[cat],
+    size: 20,
+    url: `/${cat}`
+  });
+  edges.push({ source: 'taiwan', target: cat });
+
+  // Article nodes
+  try {
+    const articles = await getCollection(`zh-tw-${cat}` as any);
+    for (const article of articles) {
+      if (!article.id.startsWith('_')) {
+        nodes.push({
+          id: `${cat}/${article.id}`,
+          label: article.data.title,
+          group: cat,
+          color: categoryColors[cat],
+          size: 10,
+          url: `/${cat}/${article.id}`
+        });
+        edges.push({ source: cat, target: `${cat}/${article.id}` });
+      }
+    }
+  } catch {}
+}
+
+const graphData = JSON.stringify({ nodes, edges });
+---
+
+<Layout title="🕸️ 知識圖譜 — Taiwan.md">
+  <main class="graph-page">
+    <div class="graph-header">
+      <h1>🕸️ 知識圖譜 Knowledge Graph</h1>
+      <p>Taiwan.md 的所有知識節點與連結</p>
+      <a href="/" class="back">← 回首頁</a>
+    </div>
+    <div id="graph-container"></div>
+    <div id="tooltip" class="tooltip"></div>
+  </main>
+</Layout>
+
+<script define:vars={{ graphData }}>
+  const data = JSON.parse(graphData);
+  
+  // Load D3 from CDN
+  const script = document.createElement('script');
+  script.src = 'https://d3js.org/d3.v7.min.js';
+  script.onload = () => initGraph(data);
+  document.head.appendChild(script);
+
+  function initGraph(data) {
+    const container = document.getElementById('graph-container');
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    const svg = d3.select('#graph-container')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height);
+
+    const g = svg.append('g');
+
+    // Zoom
+    svg.call(d3.zoom().on('zoom', (event) => {
+      g.attr('transform', event.transform);
+    }));
+
+    const simulation = d3.forceSimulation(data.nodes)
+      .force('link', d3.forceLink(data.edges).id(d => d.id).distance(d => {
+        if (d.source.id === 'taiwan') return 150;
+        return 80;
+      }))
+      .force('charge', d3.forceManyBody().strength(-200))
+      .force('center', d3.forceCenter(width / 2, height / 2))
+      .force('collision', d3.forceCollide().radius(d => d.size + 5));
+
+    // Links
+    const link = g.append('g')
+      .selectAll('line')
+      .data(data.edges)
+      .join('line')
+      .attr('stroke', '#ddd')
+      .attr('stroke-width', 1)
+      .attr('stroke-opacity', 0.6);
+
+    // Nodes
+    const node = g.append('g')
+      .selectAll('circle')
+      .data(data.nodes)
+      .join('circle')
+      .attr('r', d => d.size)
+      .attr('fill', d => d.color || (d.group === 'center' ? '#1a1a2e' : '#ccc'))
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 2)
+      .attr('cursor', 'pointer')
+      .call(d3.drag()
+        .on('start', (event, d) => {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x; d.fy = d.y;
+        })
+        .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
+        .on('end', (event, d) => {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null; d.fy = null;
+        })
+      );
+
+    // Labels
+    const label = g.append('g')
+      .selectAll('text')
+      .data(data.nodes)
+      .join('text')
+      .text(d => d.label)
+      .attr('font-size', d => d.size > 15 ? '12px' : '10px')
+      .attr('font-weight', d => d.size > 15 ? 'bold' : 'normal')
+      .attr('text-anchor', 'middle')
+      .attr('dy', d => d.size + 14)
+      .attr('fill', '#333')
+      .attr('pointer-events', 'none');
+
+    // Click to navigate
+    node.on('click', (event, d) => {
+      if (d.url) window.location.href = d.url;
+    });
+
+    // Hover
+    const tooltip = document.getElementById('tooltip');
+    node.on('mouseover', (event, d) => {
+      tooltip.textContent = d.label;
+      tooltip.style.display = 'block';
+      tooltip.style.left = event.pageX + 10 + 'px';
+      tooltip.style.top = event.pageY - 10 + 'px';
+      d3.select(event.target).attr('stroke', '#3b82f6').attr('stroke-width', 3);
+    }).on('mouseout', (event) => {
+      tooltip.style.display = 'none';
+      d3.select(event.target).attr('stroke', '#fff').attr('stroke-width', 2);
+    });
+
+    simulation.on('tick', () => {
+      link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+      node.attr('cx', d => d.x).attr('cy', d => d.y);
+      label.attr('x', d => d.x).attr('y', d => d.y);
+    });
+  }
+</script>
+
+<style>
+  .graph-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .graph-header {
+    padding: 1rem 2rem;
+    background: #1a1a2e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .graph-header h1 { font-size: 1.3rem; margin: 0; white-space: nowrap; }
+  .graph-header p { opacity: 0.7; margin: 0; font-size: 0.9rem; }
+  .back { color: #3b82f6; text-decoration: none; font-size: 0.9rem; margin-left: auto; }
+  #graph-container {
+    flex: 1;
+    background: #fafafa;
+    overflow: hidden;
+  }
+  .tooltip {
+    display: none;
+    position: absolute;
+    background: rgba(26, 26, 46, 0.9);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    z-index: 100;
+  }
+</style>

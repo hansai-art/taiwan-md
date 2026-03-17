@@ -138,6 +138,8 @@ try {
 // 處理 Markdown 內容以支援基本 HTML 渲染
 function processMarkdown(markdownContent: string) {
   return markdownContent
+    // 處理 [[wikilinks]] → bold text (articles don't need internal links)
+    .replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, target, display) => `**${display || target}**`)
     // 處理標題
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')

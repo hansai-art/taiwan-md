@@ -129,7 +129,32 @@ import { getCategoryConfig } from '../../utils/categoryConfig';
 
 import { marked } from 'marked';
 const { categoryInfo, category, hubContent, articles } = Astro.props;
-const hubHtml = hubContent ? marked.parse(hubContent) : '';
+
+// Convert [[wikilinks]] to HTML links before marked parsing
+function resolveWikilinks(md: string, currentCategory: string): string {
+  if (!md) return md;
+  // [[Page|Display Text]] or [[Page]]
+  return md.replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, target, display) => {
+    const label = display || target;
+    // Check if it's a Hub link (starts with _)
+    if (target.startsWith('_')) {
+      const catName = target.replace(/^_/, '').replace(/ Hub$/, '').toLowerCase();
+      return `[${label}](/${catName})`;
+    }
+    // Check if target matches an article in current category
+    const matchArticle = articles.find((a: any) => 
+      a.title === target || a.slug === target || a.slug === encodeURIComponent(target)
+    );
+    if (matchArticle) {
+      return `[${label}](/${currentCategory}/${matchArticle.slug})`;
+    }
+    // Default: link to search or just bold the text
+    return `**${label}**`;
+  });
+}
+
+const resolvedContent = hubContent ? resolveWikilinks(hubContent, category) : '';
+const hubHtml = resolvedContent ? marked.parse(resolvedContent) : '';
 
 // 其他分類（跨分類導航用）
 const otherCategories = Object.keys(categoryConfig)

@@ -210,7 +210,28 @@ featured: false
 
 威尼斯雙年展、Art Basel Miami、坎城 Immersive Market、巴黎 Cent Quatre 104 駐村。在國際場合不斷被問「台灣是什麼樣的地方」，卻發現沒有一個完整的入口可以指給外國朋友看。於是有了 Taiwan.md。
 
-**聯繫：** cheyu.wu@monoame.com | [GitHub](https://github.com/frank890417) | [Muse](https://muse.cheyuwu.com)
+**聯繫：** cheyu.wu@monoame.com | [GitHub](https://github.com/frank890417) | [IG @cheyuwu345](https://instagram.com/cheyuwu345) | [Muse](https://muse.cheyuwu.com)
+
+---
+
+## 🌏 Inspiration & Benchmarks
+
+我們研究了全球最好的國家知識傳播案例。Taiwan.md 的目標是**學習它們，然後超越它們**。
+
+| 案例 | 國家 | 亮點 | 我們要做的更好 |
+|------|------|------|---------------|
+| [e-Estonia](https://e-estonia.com) | 🇪🇪 愛沙尼亞 | 國家數位品牌標竿，「劣勢→優勢」敘事弧線，三層內容金字塔 | 加入開源社群力量 + AI-friendly 結構 |
+| [japan-guide.com](https://www.japan-guide.com) | 🇯🇵 日本 | 25+ 年歷史，外國人最信任的日本指南，結構化實用資訊 | 更深的文化脈絡 + 策展觀點 |
+| [VisitKorea](https://english.visitkorea.or.kr) | 🇰🇷 韓國 | 韓流加持的觀光整合，K-Culture 行銷 | 不只觀光，完整知識圖譜 |
+| [About Singapore](https://www.sg) | 🇸🇬 新加坡 | `.sg` 國家域名，政府級品牌設計，Smart Nation 定位 | 社群驅動 vs 政府驅動 |
+| [SwissInfo](https://www.swissinfo.ch) | 🇨🇭 瑞士 | 10 種語言，深度新聞 + 國家知識，公共媒體品質 | Markdown SSOT + 開源協作 |
+| [Taiwan.gov.tw](https://www.taiwan.gov.tw) | 🇹🇼 台灣 | 官方國家入口，政策導向 | 非官方觀點 + 策展深度 + 文化故事 |
+
+**我們的差異化：**
+- 🔓 **開源** — 不是政府專案，是社群驅動
+- 🤖 **AI-native** — Markdown SSOT，LLM 可直接引用
+- 🎯 **策展式** — 有觀點、有故事、有「為什麼重要」
+- 🌐 **`.md` 域名** — taiwan.md = 台灣的 Markdown = 用文件定義一個國家
 
 ---
 

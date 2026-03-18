@@ -86,6 +86,23 @@ import Layout from '../../layouts/Layout.astro';
           </div>
 
           <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2026 / 03 / 18 — 17:44</div>
+            <div class="timeline-content">
+              <h3>Milestone: 100 Stars + 5,000 Visits</h3>
+              <p>
+                At 2:23 PM on March 18, Che-Yu published a Facebook post:
+                <a href="https://www.facebook.com/cheyuwu345/posts/pfbid0qob2cPij2U2AeqxFnGwQkWQJcjzj3o7ScFDCsm2vzjTi3jf4LDgAvmriHnp7vCEfl" target="_blank" class="timeline-link">
+                  "The start of a crazy plan: taiwan.md — Open-source knowledge base about Taiwan."
+                </a>
+                The post went viral — within just three hours, Taiwan.md crossed <strong>100 stars</strong> on GitHub
+                and surpassed <strong>5,000 total page views</strong>.
+                The worldwide attention proved that this open-source knowledge base is truly needed.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
             <div class="timeline-marker pulse"></div>
             <div class="timeline-date">Ongoing</div>
             <div class="timeline-content">
@@ -573,6 +590,17 @@ import Layout from '../../layouts/Layout.astro';
 
   .timeline-list li {
     font-size: 1rem;
+  }
+
+  .timeline-link {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .timeline-link:hover {
+    text-decoration: underline;
   }
 
   /* Naming Story */

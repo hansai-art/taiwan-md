@@ -86,6 +86,23 @@ import Layout from '../layouts/Layout.astro';
           </div>
 
           <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">2026 / 03 / 18 — 17:44</div>
+            <div class="timeline-content">
+              <h3>里程碑：100 Stars + 5,000 瀏覽</h3>
+              <p>
+                3/18 下午 2:23，哲宇在 Facebook 發出一則貼文：
+                <a href="https://www.facebook.com/cheyuwu345/posts/pfbid0qob2cPij2U2AeqxFnGwQkWQJcjzj3o7ScFDCsm2vzjTi3jf4LDgAvmriHnp7vCEfl" target="_blank" class="timeline-link">
+                  「一個瘋狂計劃的開始：taiwan.md — Open-source knowledge base about Taiwan.」
+                </a>
+                貼文引發大量轉發與關注，短短三小時內，Taiwan.md 在 GitHub 突破 <strong>100 顆星星</strong>，
+                網站累計超過 <strong>5,000 人次瀏覽</strong>。
+                來自世界各地的關注，證明了這個開源知識庫正在被需要。
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
             <div class="timeline-marker pulse"></div>
             <div class="timeline-date">持續進行中</div>
             <div class="timeline-content">
@@ -582,6 +599,17 @@ import Layout from '../layouts/Layout.astro';
 
   .timeline-list li {
     font-size: 1rem;
+  }
+
+  .timeline-link {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .timeline-link:hover {
+    text-decoration: underline;
   }
 
   /* Naming Story */

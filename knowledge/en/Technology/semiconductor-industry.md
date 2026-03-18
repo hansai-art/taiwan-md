@@ -11,7 +11,7 @@ description: "Taiwan's semiconductor industry, particularly TSMC, is not only a 
 
 ## Why It Matters
 
-Taiwan's semiconductor industry, particularly TSMC, is not only a crucial pillar of Taiwan's economy but also plays a key role in the global technology ecosystem. From smartphones and computers to artificial intelligence chips, virtually all modern tech products depend on TSMC's advanced processes. This technological advantage creates a "Silicon Shield" effect, giving Taiwan significant strategic value in geopolitics.
+Taiwan manufactures over 90% of the world's most advanced semiconductors (sub-7nm), making TSMC the single most critical company in the global chip supply chain. From iPhones and NVIDIA AI accelerators to autonomous vehicles, virtually all cutting-edge tech products depend on TSMC's fabrication processes — no other company or country can substitute this capacity at scale. This dominance creates a "Silicon Shield" effect, giving Taiwan extraordinary strategic value in geopolitics and global economics.
 
 ## TSMC: Birth and Development of Industry Leader
 

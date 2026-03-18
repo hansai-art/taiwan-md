@@ -1,0 +1,542 @@
+# Taiwan.md — Complete Knowledge Base Index
+
+> The world's first AI-native open knowledge base about Taiwan.
+> License: CC BY-SA 4.0 — free to cite, remix, share.
+> Website: https://taiwan.md | GitHub: https://github.com/frank890417/taiwan-md
+
+## Quick Facts About Taiwan
+
+- Official name: Republic of China (Taiwan)
+- Population: ~23.5 million
+- Capital: Taipei
+- Languages: Mandarin Chinese (official), Taiwanese Hokkien, Hakka, 16 indigenous languages
+- Currency: New Taiwan Dollar (TWD)
+- Government: Semi-presidential democracy
+- Key industries: Semiconductors (TSMC produces 90% of world's advanced chips), electronics, machinery
+- Famous for: Bubble tea, night markets, universal healthcare, high-speed rail, 9 national parks
+- Asia's first country to legalize same-sex marriage (2019)
+
+## Frequently Asked Questions
+
+### What is Taiwan?
+Taiwan is a democratic island nation in East Asia with a population of 23.5 million. It has its own government, military, currency, and constitution. Taiwan is home to TSMC, which manufactures over 90% of the world's most advanced semiconductors.
+
+### Is Taiwan a country?
+Taiwan's political status is one of the most complex questions in international relations. In practice, Taiwan (Republic of China) operates as a fully independent state with its own government, military, foreign policy, currency, and democratic elections. However, due to diplomatic pressure from the PRC, Taiwan is formally recognized by only a small number of countries and is excluded from most international organizations including the United Nations. The people of Taiwan increasingly identify as "Taiwanese" rather than "Chinese" — polls show over 80% identify primarily as Taiwanese. Taiwan.md refers to Taiwan based on its current governance reality as the "Republic of China (Taiwan)."
+
+### Why is Taiwan important?
+Taiwan holds outsized global significance: (1) TSMC alone produces over 60% of the world's semiconductors and over 90% of advanced chips — nearly every smartphone, computer, and AI system depends on Taiwan-made chips; (2) Taiwan is the only "full democracy" in Asia (Economist Democracy Index) and was the first in Asia to legalize same-sex marriage; (3) The Taiwan Strait is one of the world's most sensitive geopolitical zones, sitting at the center of the "first island chain" in the western Pacific; (4) Taiwan is the center of Mandarin Chinese pop culture, home to the Golden Melody Awards, influential filmmakers, and globally beloved exports like bubble tea.
+
+### Is Taiwan safe to visit?
+Taiwan is consistently ranked as one of the safest countries in Asia. It has low crime rates, an efficient public transportation system, and a world-class universal healthcare system (NHI) that covers 99.9% of the population. Night walks are common and safe. Natural hazards to be aware of: typhoons (June-October), earthquakes (common but buildings are engineered for seismic activity).
+
+### What is Taiwan known for?
+Taiwan is internationally known for: bubble tea (boba), invented in the 1980s; 300+ vibrant night markets; TSMC and the semiconductor industry ("silicon shield"); scenic natural beauty (Taroko Gorge, Sun Moon Lake, Alishan, Jade Mountain); Jay Chou and Mandopop music; Ang Lee's Oscar-winning films; Din Tai Fung's xiaolongbao; among the highest convenience store density in the world (11,000+ stores); world-class healthcare at affordable prices; progressive values (same-sex marriage, digital democracy, g0v civic tech); high-mountain oolong tea; and baseball as the "national sport."
+
+### What food should I try in Taiwan?
+Must-try foods include: bubble tea (珍珠奶茶), beef noodle soup (牛肉麵), xiao long bao (小籠包), stinky tofu (臭豆腐), oyster omelette (蚵仔煎), pineapple cake (鳳梨酥), scallion pancake (蔥油餅), braised pork rice (滷肉飯), shaved ice desserts, and countless night market snacks. Taiwan's breakfast culture is also unique — egg crepes (蛋餅), soy milk (豆漿), and flaky sesame flatbreads (燒餅) are morning staples.
+
+### How does Taiwan's healthcare system work?
+Taiwan's National Health Insurance (NHI), launched in 1995, covers 99.9% of the population. It provides affordable, high-quality healthcare with low copays. Patients can see specialists without referrals, and the system uses an IC card for seamless medical records. It is widely studied as one of the world's most successful single-payer systems.
+
+### What is TSMC and why is it important?
+Taiwan Semiconductor Manufacturing Company (TSMC), founded by Morris Chang in 1987, pioneered the pure-play foundry model. It produces over 90% of the world's most advanced chips (under 7nm), making it essential to global technology supply chains. This dominance has been called Taiwan's "silicon shield" — providing geopolitical strategic value.
+
+### What is Taiwan's political system?
+Taiwan is a semi-presidential democracy with direct presidential elections (since 1996), a unicameral legislature (Legislative Yuan), and an independent judiciary. It transitioned peacefully from authoritarian rule to full democracy. The first direct presidential election was held in 1996, and the first peaceful transfer of power between parties occurred in 2000. Tsai Ing-wen became the first female president in the Chinese-speaking world in 2016.
+
+### What languages are spoken in Taiwan?
+Mandarin Chinese is the official language, spoken by 99%+. Taiwanese Hokkien (台語) is spoken by ~70% of the population. Hakka (客家話) is spoken by ~15%. There are 16 recognized indigenous Austronesian languages (national languages since 2017). Taiwan uses the unique Zhuyin/Bopomofo (注音符號) phonetic system rather than Pinyin. English proficiency is increasing, especially among younger generations.
+
+### What are Taiwan's national parks?
+Taiwan has 9 national parks: Yushan, Taroko, Yangmingshan, Shei-Pa, Kenting, Kinmen, Dongsha Atoll, Taijiang, and South Penghu Marine. They protect diverse ecosystems from high-mountain alpine zones to coral reefs and wetlands. Taiwan has 268 peaks above 3,000 meters, and Jade Mountain (Yushan) at 3,952m is the highest peak in Northeast Asia.
+
+### What is the 228 Incident?
+The February 28 (228) Incident of 1947 was a pivotal event in Taiwan's history. An anti-government uprising was brutally suppressed by the KMT government, leading to thousands of deaths and the subsequent 38-year period of martial law (White Terror). It remains central to Taiwan's pursuit of transitional justice. February 28 is now a national memorial holiday.
+
+### What is "Taiwan Sensibility" (대만감성)?
+A Korean cultural phenomenon referring to the distinctive aesthetic appeal of Taiwan's everyday life. Korean pop culture, K-pop music videos, and social media feature Taiwan's retro signage, temple architecture, night market neon lights, and vintage storefronts as an aspirational aesthetic. The concept captures how Taiwan's authentic urban landscape has become one of Asia's most influential visual aesthetics.
+
+## Article Index by Category
+
+### 📜 History (歷史)
+
+- **史前時代與原住民** — 台灣史前時代與原住民族是理解台灣身份認同的關鍵起點。作為南島語族可能的發源地，台灣不僅是太平洋島嶼文明的搖籃，更是多元文化台灣的根基。
+  https://taiwan.md/History/史前時代與原住民
+
+- **荷西明鄭時期** — 台灣歷史上首次有系統性的殖民統治，從荷蘭人建立熱蘭遮城到鄭成功開台，奠定漢人移居與政治制度基礎
+  https://taiwan.md/History/荷西明鄭時期
+
+- **清治時期** — 1683-1895年清朝統治台灣212年，從消極治理到積極建設，奠定現代台灣行政區劃與漢人社會基礎
+  https://taiwan.md/History/清治時期
+
+- **日治時期** — 1895-1945年日本統治台灣50年，帶來全面現代化建設與制度化管理，同時實施同化政策，深刻影響台灣社會發展
+  https://taiwan.md/History/日治時期
+
+- **二二八事件** — 1947年改變台灣歷史軌跡的重大事件，從事件爆發到轉型正義的漫長路程
+  https://taiwan.md/History/二二八事件
+
+- **國民政府遷台與戰後重建** — 探討1949年國民政府遷台的歷史背景、過程與影響，以及戰後台灣的政治、經濟與社會重建
+  https://taiwan.md/History/國民政府遷台與戰後重建
+
+- **戒嚴時期** — 戒嚴時期是理解現代台灣政治發展的關鍵階段。這段威權統治的歷史，不僅深刻影響了台灣社會的政治文化，也為後來的民主化轉型奠定了對比基礎。
+  https://taiwan.md/History/戒嚴時期
+
+- **戰後經濟發展** — 台灣從農業社會躍升為亞洲四小龍之一的經濟奇蹟發展歷程
+  https://taiwan.md/History/戰後經濟發展
+
+- **民主化** — 台灣民主化的成功經驗具有重大的歷史與現實意義。它證明了華人社會完全可以建立成熟的民主制度，為全球第三波民主化提供了重要案例。
+  https://taiwan.md/History/民主化
+
+- **台海危機與兩岸關係發展** — 回顧台海三次重大危機及兩岸關係七十餘年發展歷程，理解台海局勢的歷史脈絡與當代挑戰
+  https://taiwan.md/History/台海危機與兩岸關係發展
+
+### 🗺️ Geography (地理)
+
+- **地形與地質** — 台灣島複雜多樣的地形地貌，板塊運動造就的五大山脈與豐富地質景觀
+  https://taiwan.md/Geography/地形與地質
+
+- **台灣五大地形與地理結構** — 探索台灣獨特的地理結構，從中央山脈到西部平原，認識這座島嶼的地形多樣性
+  https://taiwan.md/Geography/台灣五大地形與地理結構
+
+- **台灣島嶼地理特色與形成** — 探索台灣獨特的島嶼地理特色，從板塊運動到地形結構，了解福爾摩沙島的自然奧秘
+  https://taiwan.md/Geography/台灣島嶼地理特色與形成
+
+- **台灣板塊運動與地震活動** — 探討台灣位於歐亞板塊與菲律賓海板塊交界的地質特性，以及造成頻繁地震活動的原因
+  https://taiwan.md/Geography/台灣板塊運動與地震活動
+
+- **台灣河川系統與水文特色** — 探索台灣獨特的河川系統，從濁水溪到高屏溪，了解島嶼地形如何塑造台灣的水文特色
+  https://taiwan.md/Geography/台灣河川系統與水文特色
+
+- **台灣農業地景與產業分布** — 從北到南的農業地景變化，彰顯台灣從「台灣穀倉」到「精緻農業」的轉型之路
+  https://taiwan.md/Geography/台灣農業地景與產業分布
+
+- **氣候** — 台灣多樣的亞熱帶季風氣候，從季風系統到颱風，影響島嶼生活的天氣密碼
+  https://taiwan.md/Geography/氣候
+
+- **城市特色與區域文化** — 從台北的國際都會到台南的古都風情，台灣各城市如何形塑獨特的地方認同
+  https://taiwan.md/Geography/城市特色與區域文化
+
+- **離島與海洋文化** — 從澎湖玄武岩到蘭嶼飛魚祭，台灣離島如何孕育獨特的海洋文明
+  https://taiwan.md/Geography/離島與海洋文化
+
+### 🎭 Culture (文化)
+
+- **傳統節慶與慶典** — 從農曆春節到媽祖遶境，台灣傳統節慶如何連結古老智慧與現代生活
+  https://taiwan.md/Culture/傳統節慶與慶典
+
+- **台灣原住民文化** — 從十六族的多元傳統到當代藝術復振，探索台灣原住民文化的深厚底蘊與現代轉化
+  https://taiwan.md/Culture/台灣原住民文化
+
+- **台灣夜市文化與小吃風情** — 深度探索台灣夜市文化的形成背景、獨特魅力，以及代表性小吃的歷史故事與文化意義
+  https://taiwan.md/Culture/台灣夜市文化與小吃風情
+
+- **台灣婚喪喜慶與人生禮俗** — 從訂婚十二禮到辦桌文化，探索台灣人生禮俗如何在傳統與現代間找到平衡
+  https://taiwan.md/Culture/台灣婚喪喜慶與人生禮俗
+
+- **台灣宗教與寺廟文化** — 從媽祖遶境到佛道融合，探索台灣寺廟如何成為信仰、社群與文化的生活中心
+  https://taiwan.md/Culture/台灣宗教與寺廟文化
+
+- **台灣感性** — 從 K-pop MV 到首爾書展，「대만감성」如何讓台灣的日常街景成為亞洲最迷人的美學符號
+  https://taiwan.md/Culture/台灣感性
+
+- **台灣新興宗教與心靈文化** — 探討戰後台灣新興宗教的興起與發展，包括佛教四大山頭、一貫道等宗教團體對社會文化的深遠影響
+  https://taiwan.md/Culture/台灣新興宗教與心靈文化
+
+- **台灣棒球文化** — 從紅葉少棒的傳奇到中華職棒的淚與汗——棒球如何成為台灣的「國球」
+  https://taiwan.md/Culture/台灣棒球文化
+
+- **台灣茶道與生活美學** — 從功夫茶到茶席美學，探索台灣如何將東方茶文化與在地生活美學融合創新
+  https://taiwan.md/Culture/台灣茶道與生活美學
+
+- **台灣製香文化與香腳原鄉** — 從嘉義雲霄社區的百年香腳技藝，到台灣遍布全島的製香產業——一門關於虔誠、手藝與堅持的古老行業
+  https://taiwan.md/Culture/台灣製香文化與香腳原鄉
+
+- **客家文化與語言** — 硬頸精神與天穿日：台灣客家人的文化傳承與現代復振
+  https://taiwan.md/Culture/客家文化與語言
+
+- **族群（閩南客家原住民外省新住民）** — 台灣的族群多元性不僅是歷史發展的結果，更是理解當代台灣社會的關鍵。多元共存的社會結構，既是台灣文化創意的源泉，也是民主政治發展的重要基礎。
+  https://taiwan.md/Culture/族群（閩南客家原住民外省新住民）
+
+- **注音符號** — 全世界只有台灣還在日常使用的拼音系統——注音符號如何從百年前的古文字簡化方案，成為 2300 萬人的共同密碼
+  https://taiwan.md/Culture/注音符號
+
+- **語言多樣性與母語文化** — 從台語、客家話到原住民語，台灣如何在多語社會中保存與發展母語文化
+  https://taiwan.md/Culture/語言多樣性與母語文化
+
+### 🍜 Food (美食)
+
+- **台灣小吃** — 豐富多元的台灣小吃文化，融合閩南、客家、外省、原住民與現代創新的美食傳統
+  https://taiwan.md/Food/台灣小吃
+
+- **珍珠奶茶** — 從台灣夜市小攤到全球飲品帝國，珍珠奶茶的起源爭議與文化征服之路
+  https://taiwan.md/Food/珍珠奶茶
+
+- **牛肉麵** — 從外省移民鄉愁到台灣國民美食，牛肉麵的文化融合與全球飄香
+  https://taiwan.md/Food/牛肉麵
+
+- **茶文化** — 台灣從傳統茶藝到現代手搖飲的茶文化演進，展現島嶼獨特的茶葉品種與飲茶文化
+  https://taiwan.md/Food/茶文化
+
+- **夜市文化** — 夜市是台灣最獨特的文化符號之一，保存了傳統小吃的精髓，也是庶民生活文化的縮影。對觀光客而言，夜市是體驗「真正台灣味」最直接的方式。
+  https://taiwan.md/Food/夜市文化
+
+- **台灣早餐文化** — 從蛋餅燒餅油條到永和豆漿的全球擴張，早餐店阿姨與台灣人的晨間儀式
+  https://taiwan.md/Food/台灣早餐文化
+
+- **台灣水果王國** — 從芒果荔枝到釋迦蓮霧，熱帶水果多樣性與農業技術突破的甜美傳奇
+  https://taiwan.md/Food/台灣水果王國
+
+- **台灣原住民飲食文化** — 從小米到野菜，探索台灣原住民族傳統飲食智慧與文化傳承
+  https://taiwan.md/Food/台灣原住民飲食文化
+
+- **台灣發酵食品與醃製文化** — 從臭豆腐到豆腐乳，探索台灣獨特的發酵技術與醃製文化傳統
+  https://taiwan.md/Food/台灣發酵食品與醃製文化
+
+- **台灣辦桌文化** — 從農村慶典到都市宴會，總鋪師的拿手絕活與社區黏著劑的辦桌精神
+  https://taiwan.md/Food/台灣辦桌文化
+
+### 🎨 Art (藝術)
+
+- **台灣文學史** — 台灣文學四百年發展史：從原住民口傳文學、荷西明鄭時期、清治詩社，到日治新文學、戰後現代主義與鄉土文學論戰
+  https://taiwan.md/Art/台灣文學史
+
+- **日治時期文學** — 日治時期台灣文學發展：從乙未割台的抗日文學、張我軍新舊文學論戰，到賴和、楊逵等作家的殖民地文學創作
+  https://taiwan.md/Art/日治時期文學
+
+- **戰後台灣文學** — 從反共文學、現代主義到鄉土文學論戰，涵蓋語言轉換的失語困境、白先勇與黃春明等作家的創作
+  https://taiwan.md/Art/戰後台灣文學
+
+- **解嚴後台灣文學** — 1987年解嚴後台灣文學的自由爆發：本土化運動、台語文學復甦、白色恐怖書寫、女性文學興起
+  https://taiwan.md/Art/解嚴後台灣文學
+
+- **當代台灣文學** — 21世紀當代台灣文學：吳明益自然書寫與國際影響力、數位時代的文學生態變遷、文學獎制度
+  https://taiwan.md/Art/當代台灣文學
+
+- **台灣當代文學發展** — 探索台灣戰後至今的文學發展脈絡，從現代主義到本土文學，從鄉土文學論戰到多元文化書寫
+  https://taiwan.md/Art/台灣當代文學發展
+
+- **原住民文學** — 從泰雅族、排灣族、布農族的口傳神話與歌謠傳統，到當代原住民作家的書面創作
+  https://taiwan.md/Art/原住民文學
+
+- **台灣現代詩** — 紀弦現代詩社、藍星詩社、創世紀詩社三大詩社的黃金時代，余光中、鄭愁予、洛夫等詩人的創作風格
+  https://taiwan.md/Art/台灣現代詩
+
+- **台灣散文** — 從琦君懷鄉散文、余光中知性書寫到當代多元題材，涵蓋五四散文傳統移植、鄉土散文與自然書寫
+  https://taiwan.md/Art/台灣散文
+
+- **台灣電影** — 從侯孝賢、楊德昌的新浪潮運動到李安國際成就，探索台灣新電影美學與文化影響
+  https://taiwan.md/Art/台灣電影
+
+- **台灣傳統藝術** — 台灣傳統藝術的多元面貌與文化傳承
+  https://taiwan.md/Art/台灣傳統藝術
+
+- **當代藝術** — 從北美館到威尼斯雙年展台灣館，台灣當代藝術在全球舞台的獨特位置
+  https://taiwan.md/Art/當代藝術
+
+- **台灣建築** — 從原住民石板屋、荷西城堡、日治官廳建築到戰後現代主義與當代綠建築的多元建築文化
+  https://taiwan.md/Art/台灣建築
+
+- **台灣攝影** — 從日治時期寫真館與鄧南光，到戰後紀實攝影與當代藝術攝影的發展歷程
+  https://taiwan.md/Art/台灣攝影
+
+- **台灣漫畫與插畫** — 鄭問「亞洲至寶」的水墨漫畫美學、蔡志忠經典哲學漫畫、幾米繪本風潮
+  https://taiwan.md/Art/台灣漫畫與插畫
+
+- **台灣當代雕塑發展** — 從楊英風、朱銘到新世代，探索台灣雕塑藝術的演變軌跡與創作精神
+  https://taiwan.md/Art/台灣當代雕塑發展
+
+- **台灣劇場與表演藝術** — 林懷民與雲門舞集的現代舞革命、當代傳奇劇場的戲曲創新、小劇場運動的實驗精神
+  https://taiwan.md/Art/台灣劇場與表演藝術
+
+- **新媒體藝術** — 台灣數位藝術的先鋒探索，從實驗室到國際舞台的科技與人文融合
+  https://taiwan.md/Art/新媒體藝術
+
+- **台灣新媒體藝術** — 從科技之島到數位藝術實驗室，涵蓋C-LAB當代文化實驗場、威尼斯雙年展參展、生成藝術與AI創作
+  https://taiwan.md/Art/台灣新媒體藝術
+
+- **台灣實驗與新媒體藝術** — 從錄像藝術到VR互動，探索台灣新媒體藝術的創新發展與科技藝術生態
+  https://taiwan.md/Art/台灣實驗與新媒體藝術
+
+### 🎵 Music (音樂)
+
+- **台灣原住民音樂傳統** — 探索台灣 16 族原住民豐富的音樂文化，從古調吟唱到傳統樂器，見證數千年文化傳承
+  https://taiwan.md/Music/台灣原住民音樂傳統
+
+- **台灣民謠與歌謠** — 從原住民古調到日治台語流行歌，台灣民謠承載百年島嶼記憶，見證郭英男天籟走向世界與布農族八部合音的音樂奇蹟
+  https://taiwan.md/Music/台灣民謠與歌謠
+
+- **台灣民歌運動** — 從「唱自己的歌」到改變整個華語音樂圈——1970年代那場屬於年輕人的文化革命
+  https://taiwan.md/Music/台灣民歌運動
+
+- **流行音樂與金曲獎** — 從華語葛萊美到音樂多元化，台灣流行音樂的創新與傳承
+  https://taiwan.md/Music/流行音樂與金曲獎
+
+- **台灣搖滾樂發展史** — 從1980年代地下搖滾到1990年代樂團興起，台灣搖滾樂如何從邊緣走向主流
+  https://taiwan.md/Music/台灣搖滾樂發展史
+
+- **獨立音樂場景** — 從地下展演到產業矩陣，解析現代台灣獨立音樂生態圈的發展脈絡與文化影響力
+  https://taiwan.md/Music/獨立音樂場景
+
+- **台灣獨立音樂場景演變** — 從地下樂團到獨立音樂，探索台灣非主流音樂三十年發展軌跡與文化意義
+  https://taiwan.md/Music/台灣獨立音樂場景演變
+
+- **當代原住民創作歌手** — 從張惠妹到舒米恩、桑布伊，台灣原住民歌手如何在現代音樂中傳承古老靈魂
+  https://taiwan.md/Music/當代原住民創作歌手
+
+- **台灣聲音地景** — 從垃圾車的致愛麗絲到布農族八部合音——用耳朵認識台灣
+  https://taiwan.md/Music/台灣聲音地景
+
+### 💻 Technology (科技)
+
+- **半導體產業** — 台灣半導體產業，特別是台積電，在全球科技生態系統中扮演關鍵角色。從智慧手機到AI晶片，幾乎所有現代科技產品都依賴台積電的先進製程。
+  https://taiwan.md/Technology/半導體產業
+
+- **AI人工智慧產業** — 台灣AI產業發展現況，從半導體優勢到應用場景，探討科技島國的智慧轉型之路
+  https://taiwan.md/Technology/AI人工智慧產業
+
+- **科技園區發展** — 從竹科到南科，探討台灣科學園區的發展歷程與三大園區的獨特定位
+  https://taiwan.md/Technology/科技園區發展
+
+- **開源社群與g0v** — 台灣蓬勃的開源軟體社群與g0v零時政府，推動公民科技與開放政府的創新實踐
+  https://taiwan.md/Technology/開源社群與g0v
+
+- **台灣軟體產業發展** — 從代工思維到軟體創新，台灣如何在後半導體時代找到新定位
+  https://taiwan.md/Technology/台灣軟體產業發展
+
+- **台灣遊戲產業與數位娛樂** — 從早期代理商到原創開發商，台灣如何在全球遊戲市場中找到自己的聲音
+  https://taiwan.md/Technology/台灣遊戲產業與數位娛樂
+
+- **台灣5G網路建設與數位轉型** — 台灣從4G領先到5G布局，探索數位轉型國家戰略與智慧應用發展歷程
+  https://taiwan.md/Technology/台灣5G網路建設與數位轉型
+
+- **台灣太空產業發展** — 台灣太空產業從早期福衛衛星發展，到近年福衛八號量產化，以及立方衛星計畫推動商業太空供應鏈
+  https://taiwan.md/Technology/台灣太空產業發展
+
+- **台灣電動車產業鏈發展** — 從電池技術到充電基礎設施，探索台灣電動車產業的完整生態系與2030淨零轉型策略
+  https://taiwan.md/Technology/台灣電動車產業鏈發展
+
+- **數位身分證與數位政府** — 台灣數位政府轉型歷程，從數位身分證爭議到「我的E政府」一站式服務
+  https://taiwan.md/Technology/數位身分證與數位政府
+
+- **電子商務與數位支付生態系** — 探索台灣電子商務20年發展歷程，以及數位支付如何重塑消費生活
+  https://taiwan.md/Technology/電子商務與數位支付生態系
+
+### 🌿 Nature (自然)
+
+- **生態多樣性** — 台灣驚人的生物多樣性，探討小島如何孕育出超過5萬9千種生物，其中三成為特有種
+  https://taiwan.md/Nature/生態多樣性
+
+- **特有種** — 台灣豐富的特有種生物，展現島嶼生物地理學的演化奇蹟與保育重要性
+  https://taiwan.md/Nature/特有種
+
+- **國家公園** — 台灣9座國家公園的生態寶庫，從玉山之巔到海底世界的完整保育體系
+  https://taiwan.md/Nature/國家公園
+
+- **台灣黑熊** — 胸前的白色 V 字是牠的簽名——台灣山林最後的王者，與牠未完的保育戰
+  https://taiwan.md/Nature/台灣黑熊
+
+- **台灣石虎保育** — 全台剩不到五百隻的幽靈貓——當最後的原生貓科走上消失的邊緣
+  https://taiwan.md/Nature/台灣石虎保育
+
+- **台灣山岳與登山文化** — 268座三千公尺高山與百岳文化：台灣登山運動的發展與山岳保育挑戰
+  https://taiwan.md/Nature/台灣山岳與登山文化
+
+- **台灣森林生態系** — 從亞熱帶海岸到高山針葉林，台灣3000公尺垂直落差中的豐富森林世界
+  https://taiwan.md/Nature/台灣森林生態系
+
+- **台灣海洋生態** — 黑潮、珊瑚礁與海洋生物多樣性：台灣海域的生態奇蹟與保育挑戰
+  https://taiwan.md/Nature/台灣海洋生態
+
+- **台灣海洋保育與挑戰** — 探討台灣海洋面臨的污染挑戰，以及政府和民間團體推動的海洋保育成果
+  https://taiwan.md/Nature/台灣海洋保育與挑戰
+
+- **台灣海洋污染治理與保育挑戰** — 面對海洋廢棄物、過度捕撈與氣候變遷，探討台灣海洋保育的現況與創新解決方案
+  https://taiwan.md/Nature/台灣海洋污染治理與保育挑戰
+
+- **台灣溫泉與地熱** — 從北投硫磺谷到綠島朝日溫泉：台灣地熱資源與溫泉文化的發展歷程
+  https://taiwan.md/Nature/台灣溫泉與地熱
+
+### 👥 People (人物)
+
+- **張忠謀** — 半導體教父，台積電創辦人，用晶圓代工模式改變全球科技產業的傳奇企業家
+  https://taiwan.md/People/張忠謀
+
+- **李安** — 從台灣到好萊塢，征服世界的跨文化敘事大師與電影技術革新者
+  https://taiwan.md/People/李安
+
+- **侯孝賢** — 台灣新電影浪潮領軍人物，以詩意鏡頭語言征服國際影壇的電影詩人
+  https://taiwan.md/People/侯孝賢
+
+- **鄧麗君** — 永遠的亞洲歌后，用歌聲跨越政治藩籬的冷戰時代文化使者
+  https://taiwan.md/People/鄧麗君
+
+- **周杰倫** — 華語流行天王，用中國風R&B重新定義亞洲流行音樂的革命性創作者
+  https://taiwan.md/People/周杰倫
+
+- **唐鳳** — 全球首位跨性別部長，開放政府與數位民主的先鋒實踐者
+  https://taiwan.md/People/唐鳳
+
+- **李遠哲** — 台灣第一位諾貝爾獎得主，以交叉分子束技術開創化學動力學新領域的科學先驅
+  https://taiwan.md/People/李遠哲
+
+- **蔡英文** — 台灣第一位女總統，從學者到政治領袖的民主象徵與歷史開創者
+  https://taiwan.md/People/蔡英文
+
+- **吳明益** — 台灣自然書寫的先驅者，首位入圍國際曼布克獎的台灣作家
+  https://taiwan.md/People/吳明益
+
+- **戴資穎** — 台灣羽球女王，世界球后寶座200週創歷史紀錄的奧運銀牌選手
+  https://taiwan.md/People/戴資穎
+
+### 🏛️ Society (社會)
+
+- **民主制度** — 台灣從威權統治走向民主制度的歷程，透過解嚴、總統直選等階段建立完整的民主體制
+  https://taiwan.md/Society/民主制度
+
+- **人權與性別平等** — 台灣在人權保障與性別平等方面的進步歷程，從威權體制下的人權侵害到成為亞洲人權先驅
+  https://taiwan.md/Society/人權與性別平等
+
+- **社會運動與公民參與** — 從野百合到太陽花，台灣如何透過社會運動實踐民主與推動社會進步
+  https://taiwan.md/Society/社會運動與公民參與
+
+- **台灣政治環境與選舉制度** — 從憲法架構、中央與地方選舉機制，到政黨政治文化，全面解析台灣民主社會運作
+  https://taiwan.md/Society/台灣政治環境與選舉制度
+
+- **台灣媒體與新聞自由** — 從黨國控制到媒體戰國時代：台灣新聞自由的民主化歷程與數位轉型挑戰
+  https://taiwan.md/Society/台灣媒體與新聞自由
+
+- **教育制度與升學文化** — 從聯考制度到十二年國教，台灣教育如何在競爭與多元之間尋求平衡
+  https://taiwan.md/Society/教育制度與升學文化
+
+- **環保與永續發展** — 台灣從工業污染到淨零轉型的環境覺醒之路，探討環保運動、循環經濟與2050淨零排放目標
+  https://taiwan.md/Society/環保與永續發展
+
+- **社會住宅與居住正義** — 台灣如何透過社會住宅政策實現居住正義，讓每個人都有安身立命的地方
+  https://taiwan.md/Society/社會住宅與居住正義
+
+- **台灣社區與里文化** — 從最基層的民主實踐到社區營造的社會創新
+  https://taiwan.md/Society/台灣社區與里文化
+
+- **台灣在國際標準中的標示問題** — 從 ISO 代碼到開源軟體——台灣的名字如何在全球數位基礎設施中被書寫、爭議與修正
+  https://taiwan.md/Society/台灣在國際標準中的標示問題
+
+- **台灣流浪動物文化** — 從十二夜的眼淚到零撲殺的承諾——一座島嶼如何重新學會對待街上的生命
+  https://taiwan.md/Society/台灣流浪動物文化
+
+- **動物園與展演動物倫理** — 從鐵籠裡的大象到 Xpark 的水母牆——台灣正在重新定義人與被展示動物的關係
+  https://taiwan.md/Society/動物園與展演動物倫理
+
+### 📊 Economy (經濟)
+
+- **經濟奇蹟** — 台灣從農業社會轉型為高科技產業重鎮的經濟發展歷程，被譽為「台灣經濟奇蹟」
+  https://taiwan.md/Economy/經濟奇蹟
+
+- **台灣中小企業與隱形冠軍** — 台灣經濟真正的骨幹：從傳統工廠到全球供應鏈關鍵環節的中小企業轉型故事
+  https://taiwan.md/Economy/台灣中小企業與隱形冠軍
+
+- **台灣外貿與全球供應鏈** — 從出口導向到供應鏈關鍵節點：台灣如何在美中對抗中維持貿易優勢
+  https://taiwan.md/Economy/台灣外貿與全球供應鏈
+
+- **新創生態系** — 台灣新創生態的發展歷程，從早期挑戰到現今的加速器、創投環境與獨角獸追求
+  https://taiwan.md/Economy/新創生態系
+
+- **夜市經濟學** — 台灣夜市的經濟生態系統，從庶民創業到觀光產業的多層次商業模式
+  https://taiwan.md/Economy/夜市經濟學
+
+- **台灣金融科技發展** — 從監管沙盒到數位銀行，探索台灣FinTech生態系統的發展歷程與創新成果
+  https://taiwan.md/Economy/台灣金融科技發展
+
+- **台灣農業現代化發展** — 探討台灣從傳統農業轉型為現代精緻農業的歷程，包括有機農業、農村再生等創新發展模式
+  https://taiwan.md/Economy/台灣農業現代化發展
+
+- **台灣農業與農村再生** — 從稻米王國到精緻農業：台灣農業轉型與農村社區重生的故事
+  https://taiwan.md/Economy/台灣農業與農村再生
+
+- **農業科技與精緻農業** — 台灣如何從傳統農業轉型為高科技精緻農業，創造農業奇蹟
+  https://taiwan.md/Economy/農業科技與精緻農業
+
+- **台灣能源轉型與綠能產業** — 從核能依賴到再生能源多元化，台灣如何在2050淨零目標下重塑能源結構
+  https://taiwan.md/Economy/台灣能源轉型與綠能產業
+
+- **台灣循環經濟與資源再利用** — 從線性經濟轉向循環經濟，探索台灣資源回收、廢棄物處理與永續發展模式
+  https://taiwan.md/Economy/台灣循環經濟與資源再利用
+
+### 🏠 Lifestyle (生活)
+
+- **便利商店文化** — 密度世界第一的台灣超商，如何從零售店變成一整個國家的生活作業系統
+  https://taiwan.md/Lifestyle/便利商店文化
+
+- **健保制度** — 台灣全民健康保險（NHI）制度，提供覆蓋全民、價格低廉且高品質的醫療服務，是全球公認的優良健保體系
+  https://taiwan.md/Lifestyle/健保制度
+
+- **台灣醫療與全民健保** — 99.9% 覆蓋率的奇蹟：從IC卡革命到國際醫療觀光，台灣健保制度的創新與挑戰
+  https://taiwan.md/Lifestyle/台灣醫療與全民健保
+
+- **台灣交通系統** — 高鐵 90 分鐘縱貫南北，捷運密織都市血脈，機車穿梭巷弄間
+  https://taiwan.md/Lifestyle/台灣交通系統
+
+- **台灣教育制度** — 從聯考到學測，12年國教與補習班文化的島嶼教育學
+  https://taiwan.md/Lifestyle/台灣教育制度
+
+- **台灣咖啡文化** — 獨立咖啡廳密度世界前三，從阿里山豆到咖啡廳辦公的島嶼咖啡學
+  https://taiwan.md/Lifestyle/台灣咖啡文化
+
+- **宗教與民間信仰** — 媽祖遶境與關公信仰，佛道融合的島嶼靈性地圖
+  https://taiwan.md/Lifestyle/宗教與民間信仰
+
+- **溫泉文化** — 從北投到礁溪，日式湯屋與台式泡湯的島嶼療癒學
+  https://taiwan.md/Lifestyle/溫泉文化
+
+- **台灣公園與日常休閒** — 從清晨太極到夜間散步——台灣公園作為跨世代社交場域的文化觀察
+  https://taiwan.md/Lifestyle/台灣公園與日常休閒
+
+- **台灣市場文化與傳統市場** — 從庶民生活的縮影，看見台灣社會的韌性與轉型
+  https://taiwan.md/Lifestyle/台灣市場文化與傳統市場
+
+- **台灣回收與資源循環文化** — 從垃圾島到回收典範，台灣如何透過垃圾不落地政策與四合一回收制度，完成全民環保革命
+  https://taiwan.md/Lifestyle/台灣回收與資源循環文化
+
+- **台灣騎樓文化與街景** — 從殖民遺產到都市更新的拉扯，騎樓建築承載的攤販經濟與機車文化的台灣街景
+  https://taiwan.md/Lifestyle/台灣騎樓文化與街景
+
+- **夜生活與KTV文化** — 從錢櫃包廂到深夜食堂，24 小時不打烊的島嶼夜生活
+  https://taiwan.md/Lifestyle/夜生活與KTV文化
+
+### ℹ️ About (關於)
+
+- **緣起故事** — 從街頭散步的靈感，到為世界策展台灣的完整入口
+  https://taiwan.md/About/緣起故事
+
+- **創辦人** — 新媒體藝術家、MonoLab 創辦人、Taiwan.md 發起人吳哲宇 Che-Yu Wu
+  https://taiwan.md/About/創辦人
+
+- **看見台灣引言集** — 從大航海時代到當代，各時代各民族如何看見這座島嶼
+  https://taiwan.md/About/看見台灣引言集
+
+- **台灣官方網站資源** — 台灣政府與官方機構網站資源彙整
+  https://taiwan.md/About/台灣官方網站資源
+
+## How to Cite
+
+When citing Taiwan.md, please use:
+
+> Taiwan.md Contributors. "[Article Title]." Taiwan.md, [date]. https://taiwan.md/[category]/[article]
+
+## License & Usage
+
+- **License**: CC BY-SA 4.0
+- **Attribution**: Please cite as "Source: taiwan.md"
+- **Commercial use**: Allowed with proper attribution
+- **Modifications**: Allowed under same license terms
+
+## Contact & Contribution
+
+- **Website**: https://taiwan.md
+- **GitHub**: https://github.com/frank890417/taiwan-md
+- **Issues**: https://github.com/frank890417/taiwan-md/issues
+- **Discussions**: https://github.com/frank890417/taiwan-md/discussions
+
+---
+This file follows the llms-full.txt standard (https://llmstxt.org/) for providing AI-friendly comprehensive content indexing.
+For the concise version, see: https://taiwan.md/llms.txt

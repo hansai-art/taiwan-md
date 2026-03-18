@@ -11,7 +11,7 @@ description: "Night market culture is one of Taiwan's most distinctive cultural 
 
 ## Why It Matters
 
-Night market culture is one of Taiwan's most distinctive cultural symbols. It not only preserves the essence of traditional Taiwanese snacks but also embodies grassroots living culture. Night markets provide a populist, approachable social space where people of different classes and ages can enjoy food, shopping, and entertainment together. For foreign tourists, night markets offer the most direct way to experience "authentic Taiwan flavor."
+Taiwan has over 300 night markets — open-air evening bazaars of street food, games, and shopping — making them the island's most iconic cultural institution and the number-one attraction for international visitors. Night markets preserve centuries of Taiwanese culinary tradition while constantly innovating, serving as a populist social space where people of all classes and ages gather nightly. For foreign tourists, night markets offer the most direct, immersive way to experience authentic Taiwanese culture.
 
 ## Historical Development
 

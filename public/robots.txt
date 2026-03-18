@@ -18,3 +18,7 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://taiwan.md/sitemap-index.xml
+
+# AI-friendly content index
+# llms.txt (summary): https://taiwan.md/llms.txt
+# llms-full.txt (complete): https://taiwan.md/llms-full.txt

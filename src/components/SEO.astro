@@ -11,6 +11,7 @@ interface Props {
   content?: string;
   tags?: string[];
   category?: string;
+  faq?: Array<{question: string, answer: string}>;
 }
 
 const {
@@ -24,7 +25,8 @@ const {
   dateModified,
   content,
   tags,
-  category
+  category,
+  faq
 } = Astro.props;
 
 const fullTitle = `${title} | Taiwan.md`;
@@ -102,6 +104,20 @@ const breadcrumbLD = (type === 'article' && category) ? {
     { "@type": "ListItem", "position": 3, "name": title }
   ]
 } : null;
+
+// FAQ JSON-LD
+const faqLD = (faq && faq.length > 0) ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faq.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+} : null;
 ---
 
 <!-- Basic Meta Tags -->
@@ -155,4 +171,7 @@ const breadcrumbLD = (type === 'article' && category) ? {
 <script type="application/ld+json" set:html={JSON.stringify(jsonLD, null, 2)} />
 {breadcrumbLD && (
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLD, null, 2)} />
+)}
+{faqLD && (
+  <script type="application/ld+json" set:html={JSON.stringify(faqLD, null, 2)} />
 )}

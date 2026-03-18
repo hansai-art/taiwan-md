@@ -9,7 +9,7 @@ sourceHash: "bb65e6"
 
 # Bubble Tea
 
-Bouncy black pearls floating in rich, milky tea, enjoyed through thick straws in a unique drinking experience - bubble tea has evolved from Taiwan's street creativity to a cultural symbol conquering the globe. This seemingly simple beverage has not only created billions in revenue but has become one of Taiwan's most successful cultural exports, introducing the world to Taiwan's creativity and deliciousness through each pearl.
+Bubble tea (boba) was invented in Taiwan in the 1980s and has since become a multi-billion-dollar global beverage phenomenon, with the worldwide market valued at over USD $4 billion. Combining chewy tapioca pearls with milk tea, it is Taiwan's single most recognized cultural export — now available in over 30 countries — and a symbol of the island's grassroots culinary creativity that turned a night market experiment into a worldwide drink category.
 
 ## Origin Controversy and Innovation Journey
 

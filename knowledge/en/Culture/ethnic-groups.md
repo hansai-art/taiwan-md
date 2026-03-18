@@ -11,7 +11,7 @@ description: "Taiwan's ethnic diversity is not only a result of historical devel
 
 ## Why It Matters
 
-Taiwan's ethnic diversity is not only a result of historical development but also key to understanding contemporary Taiwanese society. This multicultural coexistence social structure is both a source of Taiwan's cultural creativity and an important foundation for democratic political development. How to build a common Taiwanese identity while respecting the cultural characteristics of each ethnic group is an important issue that Taiwanese society continues to face.
+Taiwan is home to five major ethnic groups — Minnan (Hoklo, 73.5%), Hakka (12%), Mainlanders (12%), 16 officially recognized Indigenous Austronesian peoples (2.5%), and a growing new immigrant population — making it one of the most ethnically diverse societies in East Asia. This diversity is the foundation of Taiwan's cultural creativity, democratic development, and evolving national identity, distinguishing it sharply from the ethnic homogeneity narratives promoted in mainland China.
 
 ## Four Major Ethnic Groups Framework
 
